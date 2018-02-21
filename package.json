@@ -4,5 +4,9 @@
   "main": "index.js",
   "repository": "git@github.com:mojaray2k/indecision-app.git",
   "author": "Amen Moja Ra",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "babel-preset-env": "1.5.2",
+    "babel-preset-react": "6.24.1"
+  }
 }
