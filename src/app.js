@@ -3,12 +3,14 @@ console.log('app.js is running');
 // JSX - Javascript XML
 var app = {
   title: 'Indecision App',
-  subtitle: 'Put you life in the hands of a computer'
+  subtitle: 'Put you life in the hands of a computer',
+  options: ['one', 'two']
 }
 var template = (
   <div>
     <h1>{app.title}</h1>
-    <p>{app.subtitle}</p>
+    {app.subtitle && <p>{app.subtitle}</p>}
+    {app.options.length > 0 ? <p>Here are your options</p>: <p>No options</p>}
     <ol>
       <li>Item one</li>
       <li>Item two</li>
@@ -37,4 +39,4 @@ var templateTwo = (
 );
 
 var appRoot = document.getElementById('app');
-ReactDOM.render(templateTwo,  appRoot);
+ReactDOM.render(template,  appRoot);
