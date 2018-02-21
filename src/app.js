@@ -11,14 +11,20 @@ var template = (
     </ol>
   </div>
 );
-var appRoot = document.getElementById('app');
+
+var userName = 'Amen Moja Ra';
+var userAge = 42;
+var userLocation = 'District of Columbia'
 
 var templateTwo = (
   <div>
-    <h1>Amen Ra</h1>
-    <p>Age: 41</p>
-    <p>Location: Washington, DC</p>
+    <h1>{userName}</h1>
+    <p>Age: {userAge}</p>
+    <p>Location: {userLocation}</p>
   </div>
 );
+
+
+var appRoot = document.getElementById('app');
 ReactDOM.render(templateTwo,  appRoot);
 //ReactDOM.render(template,  appRoot);
