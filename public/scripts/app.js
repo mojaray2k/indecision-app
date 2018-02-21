@@ -21,14 +21,10 @@ var template = React.createElement(
     null,
     app.subtitle
   ),
-  app.options.length > 0 ? React.createElement(
+  React.createElement(
     'p',
     null,
-    'Here are your options'
-  ) : React.createElement(
-    'p',
-    null,
-    'No options'
+    app.options.length > 0 ? "Here are your options" : "No options"
   ),
   React.createElement(
     'ol',
