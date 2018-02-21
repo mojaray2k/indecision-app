@@ -25,9 +25,7 @@ var user = {
 function getLocation(location){
   if(location){
     return <p>Location: {location}</p>;
-  }else{
-    return undefined;
-  }  
+  }
 }
 
 var templateTwo = (

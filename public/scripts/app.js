@@ -50,8 +50,6 @@ function getLocation(location) {
       'Location: ',
       location
     );
-  } else {
-    return undefined;
   }
 }
 
